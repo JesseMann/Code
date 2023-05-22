@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jesse Mann's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+  
+
+
+
+        <!---- nav Section start ---->
+        <div class="navBar">
+             <nav class="NavContainer1">
+                <ul class="ul1"> 
+                    <li>
+                        <a href="https://www.linkedin.com/in/jesselanemann/">
+                            <img src="/PortfolioPictures/LI-In-Bug-removebg-preview.png" height="35px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JesseMann">
+                            <img src="/PortfolioPictures/github-mark.png" height="35px">
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            
+            <nav class="NavContainer2">
+                <ul class="ul2">
+                    <li><a href="#home">Home</a>
+                    <li><a href="#about">About</a>
+                    <li><a href="#portfolio">Portfolio</a>
+                    <li><a href="#contact">Contact</a>
+                </ul> 
+            </nav>      
+        </div>
+        <!---- nav Section end ---->
+
+
+
+
+        <!---- home Section start-->
+            <div class="home" id="home">
+                <container class="aboutContainer">
+                    <h1>Hello. I'm Jesse.</h1>
+                    <h2>Jr. Front-End Developer</h2>
+                    <button><b>Learn More</b></button>
+                </container>
+            </div>
+        <!---- home Section end-->
+
+          
+
+
+        <!---- about Section start-->
+        <div class="about" id="about">
+            <div class="aboutImgContainer no-mobile">
+                <img class="about-pic" src="/PortfolioPictures/SmilingPortrait Cut-Out.png" >
+            </div>
+            <div class="aboutTextContainer">
+                <p class="aboutText">I am a junior front-end web developer with a passion for building elegant and effective websites. <br> 
+                <br> I was first inspired to pursue a career in web development when I realized the deep well of value that this skillsets offers to startup founders. Now, I find inspiration in the journey itself - a journey of endless growth and complex problem solving.<br>
+                <br> My goal is to become a lead front-end developer within the next 3 years.<br>
+            <div class="aboutButtonContainer">
+                <div class="aboutButton">
+                <button><b>My Work</b></button>
+                </div>
+            </div>
+            </div>
+            <div class="aboutMetricsContainer">
+                <div class="aboutMetrics">
+                    <div class="Metric">
+                    <p><span class="tow textColoring">4 Years</span><br> Tech Support</p>
+                    </div>
+                    <div class="Metric">
+                    <p><span class="textColoring">500+</span><br>Lines of Code</p>
+                    </div>
+                    <div class="Metric">
+                    <p><span class="textColoring">1</span><br>Live Project</p>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <!---- about Section end-->
+
+
+
+
+        <!---- portfoilo Section start-->
+        <div class="portfolio" id="portfolio">
+            <div class="cardContainer">
+                <div class="card1">
+                    <div class="card-container1">
+                        <img class="card-img1" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div class="card-container2">
+                        <img class="card-img2" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                
+                <div class="card3">
+                    <div class="card-container3">
+                        <img class="card-img3" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---- portfolio Section start-->
+
+
+
+
+        <!---- contact Section start-->
+        <div class="contact" id="contact">
+            <div class="formContainer">
+                <form method="POST" class="contactForm" action="form.php">
+                        <div class="contactHeader">
+                            <h1> Send Jesse A Message </h1>
+                        </div>
+                        <div class="NameRow">
+                            <input type="name" class="formbox" placeholder="Your Name">
+                        </div>
+                        <div class="EmailRow">
+                            <input type="email" class="formbox" placeholder="Your Email">
+                        </div>
+                        <div class="SubjectRow">
+                            <input type="text" class="formbox" placeholder="Subject">
+                        </div>
+                        <div class="MessageRow">
+                            <textarea class="formbox" placeholder="Message" cols="30" rows="8"></textarea>
+                        </div>
+                        <div class="SubmitRow">
+                            <input type="submit" class="SubmitButton" value="Send Message"">
+                        </div>
+                </form>
+            </div>
+        </div>
+        <!---- contact Section end-->
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+        
