@@ -1,0 +1,487 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+:root{
+   --background: rgba(68, 28, 85, .85);
+   background: #1c1d25;
+}
+
+
+body {
+   max-width: 100%;
+   overflow-x: hidden;
+   font-family: 'Poppins', sans-serif;
+   font-size: min(max(1rem, 4vw), 22px);
+   font-weight: 400;
+   line-height: 1.4;
+}
+
+
+
+
+/* navbar Start*/
+.navBar {
+   background: var(--background);
+   display: flex;
+   position: fixed;
+   top: 0px;
+   left: 0;
+   right: 0;
+   z-index: 999;
+}
+
+
+.NavContainer1 {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.NavContainer2 {
+   display: flex;
+   flex-direction: row-reverse;
+   width: 100%;
+}
+
+.ul1 {
+   display: flex;
+   list-style: none;
+   align-items: center;
+}
+
+.NavContainer1 .ul1 li {
+   display: flex;
+   padding: .1rem;
+   margin-left: 1rem;
+}
+
+.ul2 {
+   display: flex;
+   list-style: none;
+   margin: 1rem;
+   align-items: center;
+}
+
+.NavContainer2 .ul2 li {
+   margin-left: .5rem;
+   margin-right: .5rem;
+}
+
+nav a {
+   color: gold;
+} 
+
+nav a:hover {
+   color: rgb(220, 146, 0);
+}
+
+nav a:link {
+   color: gold;
+   background-color: transparent;
+   text-decoration: none;
+}
+/* navbar End*/
+
+
+
+
+/* home Start*/
+.home {
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+   background: #967BB6;
+   box-shadow: 0px 6px 10px rgb(0 0 0 / 50%);
+}
+
+.home h1{
+   color: #ffd700e6;
+}
+.home h2{
+   color: #CDC7d9;
+}
+
+.home button{
+   border-radius: 5px;
+   padding: 5px;
+   border-style: none;
+   background-color: #b8aecc;
+   color: rgba(68, 28, 85, .85);
+   font-family: 'Poppins', sans-serif;
+   border-width: 5px;
+   width: 8rem;
+}
+
+.home button:hover {
+   background-color: #ffd700e6
+}
+
+.home button:active {
+   background-color: #b8aecc;
+   color: rgba(68, 28, 85, .85);
+}
+
+
+/* home End*/
+
+
+
+
+/* about Start*/
+.about {
+   display: flex;
+   background: #CDC7d9;
+   justify-content: space-evenly;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   padding-bottom: 2rem;
+}
+
+.aboutImgContainer {
+   display: flex;
+   flex-direction: column;
+   max-width: 25%;
+   padding-right: 1rem;
+}
+
+.about-pic {
+   display: flex;
+   border-color: black;
+   border-bottom-left-radius: 360px;
+   border-bottom-right-radius: 360px;
+   background-color: #967BB6;
+   width: 100%;
+   height: auto;
+}
+
+.aboutTextContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 50%;
+   padding-top: 2rem;
+}
+
+.aboutText {
+   display: flex;
+   color: rgba(68, 28, 85, .85);
+   background-color: #b8aecc;
+   padding: 2rem;
+   border-radius: 10px;}
+
+.br {
+   margin-bottom: 1em;
+}
+
+.aboutButtonContainer {
+   padding-top: 2rem;
+}
+
+.aboutTextContainer button{
+   border-radius: 5px;
+   padding: 5px;
+   border-style: none;
+   background-color: #b8aecc;
+   font-family: 'Poppins', sans-serif;
+   border-width: 5px;
+   color: rgba(68, 28, 85, .85);
+   width: 8rem;
+   text-decoration: none;
+}
+
+.aboutTextContainer button:hover {
+   background-color: #ffd700e6
+}
+
+.aboutTextContainer button:active {
+   background-color: #b8aecc;
+   color: rgba(68, 28, 85, .85);
+}
+
+.aboutMetricsContainer {
+   display: flex;
+}
+
+.aboutMetrics {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: center;
+   color: rgba(68, 28, 85, .85);
+}
+
+.Metric {
+   color:#CDC7d9;
+   background-color: #967BB6;
+   padding-bottom: 35px;
+   padding-top: 35px;
+   padding-left: 25px;
+   padding-right: 25px;
+   border-radius: 50%;
+   white-space: nowrap;
+}
+
+.textColoring {
+   color: gold;
+}
+
+/* about End*/
+
+
+
+
+/* portfolio Start*/
+.portfolio {
+   background: #967BB6;
+}
+
+.cardContainer {
+   display: flex;
+   text-align: center;
+   padding: 2rem;
+   justify-content: space-evenly;
+}
+
+.card-container1, .card-container2, .card-container3 {
+   background-color: #CDC7d9;
+   box-shadow: 0px 5px 5px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   border-radius: 5px;
+ }
+ 
+ .card-container1:hover, .card-container2:hover, .card-container3:hover {
+   box-shadow: 0px 0px 32px 0 rgba(0,0,0,0.2);
+   animation: cardswell 1s;
+ }
+
+.card-img1, .card-img2, .card-img3 {
+   border-radius: 5px 5px 5px 5px;
+   padding: 1rem;
+   max-width: 300px;
+ }
+
+
+
+ @keyframes cardswell {
+   0% {
+     transform: scale(1);
+   }
+ 
+   50% {
+     transform: scale(1.1);
+   }
+ 
+   100% {
+      transform: scale(1.0);
+}
+ }
+
+ /* portfolio End*/
+
+
+ /* contact Start*/
+.contact {
+   display: flex;
+   padding: 2rem;
+   background-color: #CDC7d9;
+   justify-content: center;
+   color: rgba(68, 28, 85, .85);
+}
+
+.formContainer {
+   text-align: center;
+}
+
+.formbox {
+   width: 100%;
+   border-radius: 5px;
+   line-height: 50px;
+   padding-left: 5px;
+   margin-bottom: 10px;
+   box-shadow: 0px;
+   border-width: 0;
+   border-color: none;
+   background-color: #b8aecc;
+   color: rgba(68, 28, 85, .85);
+}
+
+textarea {
+   resize: none;
+   height: 320px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.SubmitButton {
+   display: flex;
+   justify-content: center;
+   width: 101%;
+   border-radius: 5px;
+   line-height: 50px;
+   border-width: 0px;
+   background-color: rgba(68, 28, 85, .85);
+   color: #CDC7d9;
+}
+
+::placeholder {
+ color: rgba(68, 28, 85, .85);
+}
+
+/* contact End*/
+
+
+
+/* media Query Start*/
+
+@media screen and (max-width: 1200px) 
+   {
+      .no-mobile {
+         display: none;
+      }
+
+      .aboutTextContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 60%;
+            padding-top: 2rem;
+         }
+      
+      .aboutButtonContainer {
+         display: flex;
+         padding-top: 2rem;
+         justify-content: center;
+      }
+
+      .card1, .card2, .card3 {
+         width: 33%;
+         padding: .5rem;
+      }
+
+      .card-img1, .card-img2, .card-img3 {
+         border-radius: 5px 5px 5px 5px;
+         padding: 1rem;
+         max-width: 85%;
+       }
+
+
+   }
+
+@media screen and (max-width: 768px) 
+   {
+      .about {
+         display: flex;
+         background: #CDC7d9;
+         justify-content: space-evenly;
+         padding-left: 2rem;
+         padding-right: 2rem;
+         padding-bottom: 2rem;
+         flex-direction: column-reverse;
+      }
+
+      .aboutMetrics {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         text-align: center;
+         color: rgba(68, 28, 85, .85);
+         width: 100%;
+         padding-top: 2rem;
+      }
+
+      .Metric {
+         color:#CDC7d9;
+         background-color: #967BB6;
+         border-radius: 50%;
+         width: 22%;
+         font-size: 1rem;
+      }
+
+      .aboutTextContainer {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         max-width: 100%;
+         padding-top: 2rem;
+      }
+
+      .aboutButtonContainer {
+         display: flex;
+         padding-top: 2rem;
+         justify-content: center;
+      }
+
+      .portfolio {
+         padding: 1rem;
+      }
+
+      .contact {
+         display: flex;
+         padding: 1rem;
+         background-color: #CDC7d9;
+         justify-content: center;
+         color: rgba(68, 28, 85, .85);
+      }
+
+
+      .cardContainer {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         padding: 2rem;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+
+      .card1, .card2, .card3 {
+         width: 72%;
+         padding: .5rem;
+      }
+
+      .card-img1, .card-img2, .card-img3 {
+         border-radius: 5px 5px 5px 5px;
+         padding: 1rem;
+       }
+
+
+   }
+
+@media screen and (max-width: 525px) 
+   {
+      .NavContainer1 .ul1 li {
+         display: flex;
+         padding: .1rem;
+         margin: inherit;
+      }
+
+      .NavContainer2 {
+         display: flex;
+         flex-direction: row-reverse;
+         width: 100%;
+         font-size: 80%;
+      }
+
+      .ul2 {
+         display: flex;
+         list-style: none;
+         align-items: center;
+         margin: inherit;
+      }
+
+      .aboutMetrics {
+        display: none;
+      }
+
+      .Metric {
+         display: none;
+      }
+
+      .card1, .card2, .card3 {
+         width: 80%;
+         padding: .5rem;
+      }
+
+   }
