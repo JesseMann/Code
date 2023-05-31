@@ -96,27 +96,32 @@
             <div class="cardContainer">
                 <div class="card1">
                     <div class="card-container1">
-                        <img class="card-img1" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <img class="card-img1" src="/PortfolioPictures/Website Picture for Portfolio.png" alt="thinkman1">
+                        <h4>Personal portfolio website with a custom design.</h4>
+                        <div class="button-container">
+                            <button class="cardbutton"><a href="http://127.0.0.1:3000/PortfolioCode/Jesse%20Mann%20Portfolio%20HTML" target="_blank">Live View</a></button>
+                            <button class="cardbutton"><a href="https://github.com/JesseMann/My-Portfolio-Website" target="_blank">Source Code</a></button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card2">
-                    <div class="card-container2">
-                        <img class="card-img2" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+               <!--To Be Developed
+                    <div class="card2">
+                        <div class="card-container2">
+                            <img class="card-img2" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card3">
-                    <div class="card-container3">
-                        <img class="card-img3" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                    
+                    <div class="card3">
+                        <div class="card-container3">
+                            <img class="card-img3" src="/PortfolioPictures/think-man.jpeg" alt="thinkman1">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
                     </div>
-                </div>
+                -->
             </div>
         </div>
         <!---- portfolio Section start-->
