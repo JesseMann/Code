@@ -282,9 +282,13 @@ nav a:link {
    border-width: 5px;
    color: rgba(68, 28, 85, .85);
    width: 8rem;
-   text-decoration: none;
+   margin: 1px;
 }
+
 .button-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    padding-right: 1rem;
    padding-left: 1rem;
    padding-bottom: 1rem;
@@ -299,10 +303,6 @@ nav a:link {
    color: rgba(68, 28, 85, .85);
 }
 
-.cardbutton a{
-   text-decoration: none;
-   color:rgba(68, 28, 85, .85);
-}
  /* portfolio End*/
 
 
@@ -500,10 +500,6 @@ textarea {
          align-items: center;
          flex-direction: column;
          padding: initial;
-      }
-
-      .cardbutton {
-         margin-top: .5rem;
       }
 
       .card-container1 h4 {

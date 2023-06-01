@@ -18,12 +18,12 @@
              <nav class="NavContainer1">
                 <ul class="ul1"> 
                     <li>
-                        <a href="https://www.linkedin.com/in/jesselanemann/">
+                        <a href="https://www.linkedin.com/in/jesselanemann/" label="Hyperlink to an external LinkedIn Profile">
                             <img src="/PortfolioPictures/LI-In-Bug-removebg-preview.png" height="35px">
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/JesseMann">
+                        <a href="https://github.com/JesseMann" label="Hyperlink to an external GitHub Profile">
                             <img src="/PortfolioPictures/github-mark.png" height="35px">
                         </a>
                     </li>
@@ -32,10 +32,10 @@
             
             <nav class="NavContainer2">
                 <ul class="ul2">
-                    <li><a href="#home">Home</a>
-                    <li><a href="#about">About</a>
-                    <li><a href="#portfolio">Portfolio</a>
-                    <li><a href="#contact">Contact</a>
+                    <li><a href="#home" label="Hyperlink to the internal Home Page">Home</a>
+                    <li><a href="#about" label="Hyperlink to the internal About Page">About</a>
+                    <li><a href="#portfolio" label="Hyperlink to the internal Portfolio Page">Portfolio</a>
+                    <li><a href="#contact" label="Hyperlink to the internal Contact Page">Contact</a>
                 </ul> 
             </nav>      
         </div>
@@ -49,7 +49,7 @@
                 <container class="aboutContainer">
                     <h1>Hello. I'm Jesse.</h1>
                     <h2>Jr. Front-End Developer</h2>
-                    <button><b>Learn More</b></button>
+                    <button label="button linking to the internal About Page"><b>Learn More</b></button>
                 </container>
             </div>
         <!---- home Section end-->
@@ -60,7 +60,7 @@
         <!---- about Section start-->
         <div class="about" id="about">
             <div class="aboutImgContainer no-mobile">
-                <img class="about-pic" src="/PortfolioPictures/SmilingPortrait Cut-Out.png" >
+                <img class="about-pic" src="/PortfolioPictures/SmilingPortrait Cut-Out.png" alt="Cute picture of Jesse (the web developer) smiling like a doofus.">
             </div>
             <div class="aboutTextContainer">
                 <p class="aboutText">I am a junior front-end web developer with a passion for building elegant and effective websites. <br> 
@@ -68,7 +68,7 @@
                 <br> My goal is to become a lead front-end developer within the next 3 years.<br>
             <div class="aboutButtonContainer">
                 <div class="aboutButton">
-                <button><b>My Work</b></button>
+                <button label="button linking to the internal Portfolio Page"><b>My Work</b></button>
                 </div>
             </div>
             </div>
@@ -99,8 +99,12 @@
                         <img class="card-img1" src="/PortfolioPictures/Website Picture for Portfolio.png" alt="thinkman1">
                         <h4>Personal portfolio website with a custom design.</h4>
                         <div class="button-container">
-                            <button class="cardbutton"><a href="http://127.0.0.1:3000/PortfolioCode/Jesse%20Mann%20Portfolio%20HTML" target="_blank">Live View</a></button>
-                            <button class="cardbutton"><a href="https://github.com/JesseMann/My-Portfolio-Website" target="_blank">Source Code</a></button>
+                            <form action="http://127.0.0.1:3000/PortfolioCode/Jesse%20Mann%20Portfolio%20HTML" target="_blank" label="button externally linking to live preview of Portfolio Project #1">
+                                <input type="submit" value="Live View" class="cardbutton" />
+                            </form>
+                            <form action="https://github.com/JesseMann/My-Portfolio-Website" target="_blank" label="button externally linking to the source code of a Portfolio Project #1">
+                                <input type="submit" value="Source Code" class="cardbutton" />
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -137,19 +141,19 @@
                             <h1> Send Jesse A Message </h1>
                         </div>
                         <div class="NameRow">
-                            <input type="name" class="formbox" placeholder="Your Name">
+                            <input type="name" class="formbox" placeholder="Your Name" label="Your Name">
                         </div>
                         <div class="EmailRow">
-                            <input type="email" class="formbox" placeholder="Your Email">
+                            <input type="email" class="formbox" placeholder="Your Email" label="Your Email Address">
                         </div>
                         <div class="SubjectRow">
-                            <input type="text" class="formbox" placeholder="Subject">
+                            <input type="text" class="formbox" placeholder="Subject" label="Subject of Your Email">
                         </div>
                         <div class="MessageRow">
-                            <textarea class="formbox" placeholder="Message" cols="30" rows="8"></textarea>
+                            <textarea class="formbox" placeholder="Message" cols="30" rows="8" label="Content of your Email"></textarea>
                         </div>
                         <div class="SubmitRow">
-                            <input type="submit" class="SubmitButton" value="Send Message"">
+                            <input type="submit" class="SubmitButton" value="Send Message" label="Email Submit Button">
                         </div>
                 </form>
             </div>
