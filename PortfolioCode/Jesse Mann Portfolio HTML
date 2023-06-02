@@ -67,8 +67,11 @@
                 <br> I was first inspired to pursue a career in web development when I realized the deep well of value that this skillsets offers to startup founders. Now, I find inspiration in the journey itself - a journey of endless growth and complex problem solving.<br>
                 <br> My goal is to become a lead front-end developer within the next 3 years.<br>
             <div class="aboutButtonContainer">
+                <form action="PDF-FILE" target="_blank" label="button externally linking to a Resume PDF">
+                    <input type="submit" value="My Resume" class="aboutButtons" />
+                </form>
                 <div class="aboutButton">
-                <button label="button linking to the internal Portfolio Page"><b>My Work</b></button>
+                <button class="aboutButtons" label="button linking to the internal Portfolio Page"><b>My Work</b></button>
                 </div>
             </div>
             </div>

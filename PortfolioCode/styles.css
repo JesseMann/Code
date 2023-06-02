@@ -181,7 +181,7 @@ nav a:link {
    padding-top: 2rem;
 }
 
-.aboutTextContainer button{
+.aboutButtons {
    border-radius: 5px;
    padding: 5px;
    border-style: none;
@@ -191,13 +191,14 @@ nav a:link {
    color: rgba(68, 28, 85, .85);
    width: 8rem;
    text-decoration: none;
+   margin: 1px;
 }
 
-.aboutTextContainer button:hover {
+.aboutButtons:hover {
    background-color: #ffd700e6
 }
 
-.aboutTextContainer button:active {
+.aboutButtons:active {
    background-color: #b8aecc;
    color: rgba(68, 28, 85, .85);
 }
