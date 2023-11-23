@@ -4,8 +4,12 @@
 }
 
 :root{
-   --background: rgba(68, 28, 85, .85);
-   background: #1c1d25;
+   --darkPurple: rgba(68, 28, 85, .85);
+   --mediumPurple: #967BB6;
+   --medlightPurple: #b8aecc;
+   --lightPurple: #CDC7d9;
+   --gold: rgba(255, 215, 0);
+   --darkGold: rgba(218, 165, 32);
 }
 
 
@@ -23,7 +27,7 @@ body {
 
 /* navbar Start*/
 .navBar {
-   background: var(--background);
+   background: var(--darkPurple);
    display: flex;
    position: fixed;
    top: 0px;
@@ -69,15 +73,15 @@ body {
 }
 
 nav a {
-   color: gold;
+   color: var(--gold);
 } 
 
-nav a:hover {
-   color: rgb(220, 146, 0);
+nav li a:hover {
+   color: var(--darkGold);
 }
 
 nav a:link {
-   color: gold;
+   color: var(--gold);
    background-color: transparent;
    text-decoration: none;
 }
@@ -94,35 +98,35 @@ nav a:link {
    justify-content: center;
    width: 100%;
    height: 100vh;
-   background: #967BB6;
+   background: var(--mediumPurple);
    box-shadow: 0px 6px 10px rgb(0 0 0 / 50%);
 }
 
 .home h1{
-   color: #ffd700e6;
+   color: var(--gold);
 }
 .home h2{
-   color: #CDC7d9;
+   color: var(--lightPurple);
 }
 
 .home button{
    border-radius: 5px;
    padding: 5px;
    border-style: none;
-   background-color: #b8aecc;
-   color: rgba(68, 28, 85, .85);
+   background-color: var(--medlightPurple);
+   color: var(--darkPurple);
    font-family: 'Poppins', sans-serif;
    border-width: 5px;
    width: 8rem;
 }
 
 .home button:hover {
-   background-color: #ffd700e6
+   background-color: var(--gold)
 }
 
 .home button:active {
-   background-color: #b8aecc;
-   color: rgba(68, 28, 85, .85);
+   background-color: var(--medlightPurple);
+   color: var(--darkPurple);
 }
 
 
@@ -134,7 +138,7 @@ nav a:link {
 /* about Start*/
 .about {
    display: flex;
-   background: #CDC7d9;
+   background: var(--lightPurple);
    justify-content: space-evenly;
    padding-left: 2rem;
    padding-right: 2rem;
@@ -153,7 +157,7 @@ nav a:link {
    border-color: black;
    border-bottom-left-radius: 360px;
    border-bottom-right-radius: 360px;
-   background-color: #967BB6;
+   background-color: var(--mediumPurple);
    width: 100%;
    height: auto;
 }
@@ -168,10 +172,11 @@ nav a:link {
 
 .aboutText {
    display: flex;
-   color: rgba(68, 28, 85, .85);
-   background-color: #b8aecc;
+   color: var(--darkPurple);
+   background-color: var(--medlightPurple);
    padding: 2rem;
-   border-radius: 10px;}
+   border-radius: 10px;
+}
 
 .br {
    margin-bottom: 1em;
@@ -185,10 +190,10 @@ nav a:link {
    border-radius: 5px;
    padding: 5px;
    border-style: none;
-   background-color: #b8aecc;
+   background-color: var(--medlightPurple);
    font-family: 'Poppins', sans-serif;
    border-width: 5px;
-   color: rgba(68, 28, 85, .85);
+   color: var(--darkPurple);
    width: 8rem;
    text-decoration: none;
    margin: 1px;
@@ -199,8 +204,8 @@ nav a:link {
 }
 
 .aboutButtons:active {
-   background-color: #b8aecc;
-   color: rgba(68, 28, 85, .85);
+   background-color: var(--medlightPurple);
+   color: var(--darkPurple);
 }
 
 .aboutMetricsContainer {
@@ -212,12 +217,12 @@ nav a:link {
    flex-direction: column;
    justify-content: space-evenly;
    text-align: center;
-   color: rgba(68, 28, 85, .85);
+   color: var(--darkPurple);
 }
 
 .Metric {
-   color:#CDC7d9;
-   background-color: #967BB6;
+   color:var(--lightPurple);
+   background-color: var(--mediumPurple);
    padding-bottom: 35px;
    padding-top: 35px;
    padding-left: 25px;
@@ -227,7 +232,7 @@ nav a:link {
 }
 
 .textColoring {
-   color: gold;
+   color: var(--gold);
 }
 
 /* about End*/
@@ -237,7 +242,7 @@ nav a:link {
 
 /* portfolio Start*/
 .portfolio {
-   background: #967BB6;
+   background: var(--mediumPurple);
 }
 
 .cardContainer {
@@ -254,7 +259,7 @@ nav a:link {
 }
 
 .card-container1{
-   background-color: #CDC7d9;
+   background-color: var(--lightPurple);
    box-shadow: 0px 5px 5px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
    padding: 1rem;
@@ -278,10 +283,10 @@ nav a:link {
    border-radius: 5px;
    padding: 5px;
    border-style: none;
-   background-color: #b8aecc;
+   background-color: var(--medlightPurple);
    font-family: 'Poppins', sans-serif;
    border-width: 5px;
-   color: rgba(68, 28, 85, .85);
+   color: var(--darkPurple);
    width: 8rem;
    margin: 1px;
 }
@@ -296,12 +301,12 @@ nav a:link {
 }
 
 .cardbutton:hover {
-   background-color: #ffd700e6
+   background-color: var(--gold)
 }
 
 .cardbutton:active {
-   background-color: #b8aecc;
-   color: rgba(68, 28, 85, .85);
+   background-color: var(--medlightPurple);
+   color: var(--darkPurple);
 }
 
  /* portfolio End*/
@@ -312,9 +317,9 @@ nav a:link {
 .contact {
    display: flex;
    padding: 2rem;
-   background-color: #CDC7d9;
+   background-color: var(--lightPurple);
    justify-content: center;
-   color: rgba(68, 28, 85, .85);
+   color: var(--darkPurple);
 }
 
 .formContainer {
@@ -330,8 +335,8 @@ nav a:link {
    box-shadow: 0px;
    border-width: 0;
    border-color: none;
-   background-color: #b8aecc;
-   color: rgba(68, 28, 85, .85);
+   background-color: var(--medlightPurple);
+   color: var(--darkPurple);
 }
 
 textarea {
@@ -347,12 +352,12 @@ textarea {
    border-radius: 5px;
    line-height: 50px;
    border-width: 0px;
-   background-color: rgba(68, 28, 85, .85);
-   color: #CDC7d9;
+   background-color: var(--darkPurple);
+   color: var(--lightPurple);
 }
 
 ::placeholder {
- color: rgba(68, 28, 85, .85);
+ color: var(--darkPurple);
 }
 
 /* contact End*/
@@ -396,7 +401,7 @@ textarea {
    {
       .about {
          display: flex;
-         background: #CDC7d9;
+         background: var(--lightPurple);
          justify-content: space-evenly;
          padding-left: 2rem;
          padding-right: 2rem;
@@ -409,14 +414,14 @@ textarea {
          flex-direction: row;
          justify-content: space-evenly;
          text-align: center;
-         color: rgba(68, 28, 85, .85);
+         color: var(--darkPurple);
          width: 100%;
          padding-top: 2rem;
       }
 
       .Metric {
-         color:#CDC7d9;
-         background-color: #967BB6;
+         color:var(--lightPurple);
+         background-color: var(--mediumPurple);
          border-radius: 50%;
          width: 22%;
          font-size: 1rem;
@@ -439,9 +444,9 @@ textarea {
       .contact {
          display: flex;
          padding: 1rem;
-         background-color: #CDC7d9;
+         background-color: var(--lightPurple);
          justify-content: center;
-         color: rgba(68, 28, 85, .85);
+         color: var(--darkPurple);
       }
 
 
