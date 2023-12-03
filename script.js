@@ -90,3 +90,5 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 /* END -- Night Mode Toggle Feature  */
+
+//update
