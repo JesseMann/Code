@@ -69,3 +69,24 @@ myWorkButton.addEventListener('click', e => {
   navbar.classList.add('fixed'); // Add class to fix navbar position
   window.scrollTo({ top: topPosition, behavior: 'smooth' }); // Scroll to portfolio section
 });
+
+
+
+/* START -- Night Mode Toggle Feature  */
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      
+      localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+/* END -- Night Mode Toggle Feature  */
