@@ -72,7 +72,7 @@ myWorkButton.addEventListener('click', e => {
 
 
 
-/* START -- Night Mode Toggle Feature  */
+ // START -- Night Mode Toggle Feature
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 function switchTheme(e) {
@@ -88,7 +88,4 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
-
-/* END -- Night Mode Toggle Feature  */
-
-//update
+// END -- Night Mode Toggle Feature 
