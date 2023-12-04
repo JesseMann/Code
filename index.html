@@ -7,43 +7,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="docs/assets/css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
   
-
-
+        <!-- Additional Mobile Nav Start -->
+        <div class="NavContainer1-Mobile"">
+            <ul class="ul1-Mobile"> 
+                <li>
+                    <a href="https://www.linkedin.com/in/jesselanemann/" label="Hyperlink to an external LinkedIn Profile">
+                        <img src="docs/assets/images/linkedin.png" height="45px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/JesseMann" label="Hyperlink to an external GitHub Profile">
+                        <img src="docs/assets/images/github-mark.png" height="35px">
+                    </a>
+                </li>
+            </ul>
+            
+            <i class="fa fa-bars NavIcon" id="MobileHamburgerMenu" onclick="NavDisplay()"></i>
+        </div>
+        <!-- Mobile Nav End-->
 
         <!---- nav Section start ---->
-        <div class="navBar">
-             <nav class="NavContainer1">
-                <ul class="ul1"> 
-                    <li>
-                        <a href="https://www.linkedin.com/in/jesselanemann/" label="Hyperlink to an external LinkedIn Profile">
-                            <img src="docs/assets/images/linkedin.png" height="45px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/JesseMann" label="Hyperlink to an external GitHub Profile">
-                            <img src="docs/assets/images/github-mark.png" height="35px">
-                        </a>
-                    </li>
-                </ul>
+        <div class="navBar" id="navBar">
+            <nav class="NavContainer">
+                <nav class="NavContainer1">
+                    <ul class="ul1"> 
+                        <li>
+                            <a href="https://www.linkedin.com/in/jesselanemann/" label="Hyperlink to an external LinkedIn Profile">
+                                <img src="docs/assets/images/linkedin.png" height="45px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JesseMann" label="Hyperlink to an external GitHub Profile">
+                                <img src="docs/assets/images/github-mark.png" height="35px">
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             
-            <nav class="NavContainer2">
-                <ul class="ul2">
-                    <li><a href="#home" label="Hyperlink to the internal Home Page">Home</a>
-                    <li><a href="#about" label="Hyperlink to the internal About Page">About</a>
-                    <li><a href="#portfolio" label="Hyperlink to the internal Portfolio Page">Portfolio</a>
-                    <li><a href="#contact" label="Hyperlink to the internal Contact Page">Contact</a>
-                    <li> <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                            <input type="checkbox" id="checkbox" />
-                            <div class="slider round"></div>
-                          </label>
-                          </div>
-                </ul> 
-            </nav>      
+                <nav class="NavContainer2">
+                    <ul class="ul2" id="ul2">
+                        <li><a href="#home" label="Hyperlink to the internal Home Page">Home</a>
+                        <li><a href="#about" label="Hyperlink to the internal About Page">About</a>
+                        <li><a href="#portfolio" label="Hyperlink to the internal Portfolio Page">Portfolio</a>
+                        <li><a href="#contact" label="Hyperlink to the internal Contact Page">Contact</a>
+                        <li> <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                            </label>
+                            </div>
+                    </ul> 
+                </nav>  
+
+            </nav>  
         </div>
         <!---- nav Section end ---->
 

@@ -89,3 +89,16 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 // END -- Night Mode Toggle Feature 
+
+// Hamburger Menu Start
+
+function NavDisplay() {
+  var x = document.getElementById("navBar");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+
+// Hamburger Menu End
