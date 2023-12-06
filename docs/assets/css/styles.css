@@ -507,7 +507,32 @@ textarea {
 
 /* contact End*/
 
+/* Thank You Start */
+.ThankYou {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
 
+.ThankYou h2 {
+   padding-bottom: 1rem;
+}
+
+.ThankYou h2 a {
+   color: var(--textColor2)
+}
+
+.ThankYou h2 a:hover {
+   color: var(--textColor3)
+}
+
+.ThankYouButton {
+   padding-top: 2rem;
+}
+
+/* Thank You End */
 
 /* media Query Start*/
 
@@ -656,8 +681,26 @@ textarea {
          align-items: center;
          margin: inherit;
          flex-direction: column;
+         font-size: 26px;
       }
 
+      .Night-Mode-Mobile-1 {
+         list-style: none;
+      }
+
+      .Night-Mode-Mobile-2 {
+         list-style: none;
+         text-decoration: none;
+         display: block;
+         position: absolute;
+         right: 70px;
+         top: 15px;
+         z-index: 2;
+      }
+
+      #theme-switch-wrapper {
+         display: none;
+      }
 
       .NavContainer2 .ul2 li {
          padding-bottom: 15px;

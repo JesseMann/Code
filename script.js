@@ -6,9 +6,11 @@ document.querySelectorAll('nav a').forEach(link => {
     e.preventDefault(); // Prevent default link behavior
 
     const href = link.getAttribute('href'); // Get link href attribute
+    var x = window.matchMedia("(min-width: 576px)") // Get media query 576 or >
+    var y = window.matchMedia("(max-width: 575px)") // Get media query 575 or <
 
-    // Check if the link is an internal link
-    if (href.startsWith('#')) {
+    // Check if the link is an internal link && if media query matches x
+    if (href.startsWith('#') && x.matches) {
       const sectionId = href; // Get section ID from link
       const section = document.querySelector(sectionId); // Get section element
 
@@ -18,7 +20,20 @@ document.querySelectorAll('nav a').forEach(link => {
 
       navbar.classList.add('fixed'); // Add class to fix navbar position
       window.scrollTo({ top: topPosition, behavior: 'smooth' }); // Scroll to section
-    } else {
+    } 
+    
+    // Check if the link is an internal link && if media query matches y
+    else if (href.startsWith('#') && y.matches) {
+      
+      // Get the target element based on the href attribute
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      // Scroll to the target element with smooth behavior
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    else {
       // The link is an external link, perform default behavior
       window.open(href, '_blank');
     }
@@ -102,3 +117,11 @@ function NavDisplay() {
 }
 
 // Hamburger Menu End
+
+// Thank You Page Start
+
+function ThankYouPageLink() {
+  window.location.href="https://jessemann.github.io/My-Portfolio-Website/ThankYou.html";
+}
+
+// Thank You Page End
