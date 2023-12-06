@@ -125,3 +125,5 @@ function ThankYouPageLink() {
 }
 
 // Thank You Page End
+
+//update js scroll effect
